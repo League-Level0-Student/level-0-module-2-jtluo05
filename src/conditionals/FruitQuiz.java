@@ -30,19 +30,23 @@ public class FruitQuiz extends KeyAdapter {
 		// 2. Make 3 variables that hold the key codes for apple, banana and carrot
 		int a = 65;
 		int b = 66;
-		int c = 66;
+		int c = 67;
 
 		if (question1.isShowing()) {
 			// 3. If they touched the right fruit, do steps 4 and 7
-			
+			if (keyCode==65) {
+				
+		
 			// 4. Call the correct() method
-
+correct();
 			// 7. Use the nextQuestion() method to go to question2
 
 			// 8. else (if they touched something else)
-
+}
 			// 9. Call the incorrect() method
-
+			else{
+		incorrect();
+			}
 		}
 
 		// 12. If question2 is showing,
@@ -55,13 +59,13 @@ public class FruitQuiz extends KeyAdapter {
 		// the default package. It must be a .wav file.
 		// There are lots on freesound.org
 		// 6. Use the playSound method to play your sound
-
+playSound("winner.wav");
 	}
 
 	private void incorrect() {
 		// 10. Find a sound for wrong answers and put it in the default package. Use the
 		// playSound method to play it.
-
+playSound("beep.wav");
 	}
 
 	private void nextQuestion(JLabel newQuestion) {
