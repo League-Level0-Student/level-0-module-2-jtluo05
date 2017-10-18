@@ -5,3 +5,6 @@
 /extra/
 /methods/
 /random/
+/RandomCheckpoint.class
+/RelationalCheckpoint.class
+/CallingMethodsCheckpoint.class
